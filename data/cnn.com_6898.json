@@ -1,0 +1,993 @@
+{
+  "initialUrl": "https://cnn.com/",
+  "finalUrl": "https://edition.cnn.com/",
+  "timeout": false,
+  "testStarted": 1726673949232,
+  "testFinished": 1726673982874,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "Onetrust",
+        "open": false,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [],
+        "snippets": []
+      }
+    ],
+    "cookies": [
+      {
+        "name": "pid",
+        "domain": ".smartadserver.com",
+        "path": "/api",
+        "expires": 1760888296114,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "SecGpc",
+        "domain": ".cnn.com",
+        "path": "/",
+        "session": true,
+        "sameSite": "None"
+      },
+      {
+        "name": "countryCode",
+        "domain": ".cnn.com",
+        "path": "/",
+        "session": true,
+        "sameSite": "None"
+      },
+      {
+        "name": "stateCode",
+        "domain": ".cnn.com",
+        "path": "/",
+        "session": true,
+        "sameSite": "None"
+      },
+      {
+        "name": "FastAB",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1758209950851,
+        "session": false,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "usprivacy",
+        "domain": ".cnn.com",
+        "path": "/",
+        "session": true,
+        "sameSite": "None"
+      },
+      {
+        "name": "optimizelyEndUserId",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1742225951000,
+        "session": false
+      },
+      {
+        "name": "sato",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1726767552000,
+        "session": false
+      },
+      {
+        "name": "FastAB_Zion",
+        "domain": ".cnn.com",
+        "path": "/",
+        "session": true,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "uid-bp-2009",
+        "domain": ".ads.stickyadstv.com",
+        "path": "/",
+        "expires": 1742225952962,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "UID",
+        "domain": ".ads.stickyadstv.com",
+        "path": "/",
+        "expires": 1729265952962,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ug1",
+        "domain": ".www.ugdturner.com",
+        "path": "/",
+        "expires": 1884353953047,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_t_tests",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1726677553000,
+        "session": false
+      },
+      {
+        "name": "ljt_reader",
+        "domain": ".lijit.com",
+        "path": "/",
+        "expires": 1758209959802,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_cb",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1760801953000,
+        "session": false
+      },
+      {
+        "name": "_chartbeat2",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1760801953000,
+        "session": false
+      },
+      {
+        "name": "_cb_svref",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1726675768000,
+        "session": false
+      },
+      {
+        "name": "ug",
+        "domain": "edition.cnn.com",
+        "path": "/",
+        "expires": 1758209953000,
+        "session": false
+      },
+      {
+        "name": "ugs",
+        "domain": "edition.cnn.com",
+        "path": "/",
+        "expires": 1726767553000,
+        "session": false
+      },
+      {
+        "name": "_scor_uid",
+        "domain": "edition.cnn.com",
+        "path": "/",
+        "expires": 1760369953000,
+        "session": false
+      },
+      {
+        "name": "IMRID",
+        "domain": ".imrworldwide.com",
+        "path": "/",
+        "expires": 1760369953381,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "OptanonConsent",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1758209953000,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "UID",
+        "domain": ".scorecardresearch.com",
+        "path": "/",
+        "expires": 1760369953464,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "XID",
+        "domain": ".scorecardresearch.com",
+        "path": "/",
+        "expires": 1760369953464,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "cnprevpage_pn",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1726675753000,
+        "session": false
+      },
+      {
+        "name": "demdex",
+        "domain": ".demdex.net",
+        "path": "/",
+        "expires": 1742225953750,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "zync-uuid",
+        "domain": ".rezync.com",
+        "path": "/",
+        "expires": 1760369953753,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "sd-session-id",
+        "domain": "live.rezync.com",
+        "path": "/",
+        "expires": 1760369953753,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "AMCVS_7FF852E2556756057F000101%40AdobeOrg",
+        "domain": ".cnn.com",
+        "path": "/",
+        "session": true
+      },
+      {
+        "name": "_sp_ses.f5fb",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1726675753000,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_sp_id.f5fb",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1758209953000,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "receive-cookie-deprecation",
+        "domain": ".casalemedia.com",
+        "path": "/",
+        "expires": 1758209960664,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "XANDR_PANID",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 1734449968282,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "icu",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 1734449954043,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "receive-cookie-deprecation",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 2041169968282,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uuid2",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 1734449968282,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ad-id",
+        "domain": ".amazon-adsystem.com",
+        "path": "/",
+        "expires": 1743521957830,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ad-privacy",
+        "domain": ".amazon-adsystem.com",
+        "path": "/",
+        "expires": 1885563557830,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_uid",
+        "domain": ".fwmrm.net",
+        "path": "/",
+        "expires": 1742225969266,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "s_ecid",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1789745954827,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "s_cc",
+        "domain": ".cnn.com",
+        "path": "/",
+        "session": true
+      },
+      {
+        "name": "AMCV_7FF852E2556756057F000101%40AdobeOrg",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1789745954000,
+        "session": false
+      },
+      {
+        "name": "khaos",
+        "domain": ".rubiconproject.com",
+        "path": "/",
+        "expires": 1758209968393,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "CMID",
+        "domain": ".casalemedia.com",
+        "path": "/",
+        "expires": 1758209956694,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "CMPS",
+        "domain": ".casalemedia.com",
+        "path": "/",
+        "expires": 1734449954610,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "CMPRO",
+        "domain": ".casalemedia.com",
+        "path": "/",
+        "expires": 1734449956694,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "tluidp",
+        "domain": ".3lift.com",
+        "path": "/",
+        "expires": 1734449954891,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "tluid",
+        "domain": ".3lift.com",
+        "path": "/",
+        "expires": 1734449954891,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_bts",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1726677554000,
+        "session": false
+      },
+      {
+        "name": "sp",
+        "domain": "collector.cdp.cnn.com",
+        "path": "/",
+        "expires": 1758209955191,
+        "session": false,
+        "sameSite": "Strict"
+      },
+      {
+        "name": "TDID",
+        "domain": ".adsrvr.org",
+        "path": "/",
+        "expires": 1758209963041,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "bounceClientVisit7291c",
+        "domain": ".bounceexchange.com",
+        "path": "/",
+        "expires": 1726675755163,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "everest_g_v2",
+        "domain": ".everesttech.net",
+        "path": "/",
+        "expires": 1758209955270,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "bounceClientVisit7291v",
+        "domain": ".edition.cnn.com",
+        "path": "/",
+        "expires": 1726675755000,
+        "session": false
+      },
+      {
+        "name": "A3",
+        "domain": ".yahoo.com",
+        "path": "/",
+        "expires": 1758231562992,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "stx_user_id",
+        "domain": ".sharethrough.com",
+        "path": "/",
+        "expires": 1729265955645,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "C",
+        "domain": ".adform.net",
+        "path": "/",
+        "expires": 1729265955487,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "IDE",
+        "domain": ".doubleclick.net",
+        "path": "/",
+        "expires": 1789745955622,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uid",
+        "domain": ".adform.net",
+        "path": "/",
+        "expires": 1731857955625,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "__gads",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1760369955000,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "__gpi",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1760369955000,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "__eoi",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1742225955000,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_bti",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1758209955000,
+        "session": false
+      },
+      {
+        "name": "zuid",
+        "domain": ".zemanta.com",
+        "path": "/",
+        "expires": 1758209956403,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "FCNEC",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1758209957000,
+        "session": false
+      },
+      {
+        "name": "khaos_p",
+        "domain": ".rubiconproject.com",
+        "path": "/",
+        "expires": 1758209968393,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "mc",
+        "domain": ".quantserve.com",
+        "path": "/",
+        "expires": 1760888357502,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "__qca",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1760542757000,
+        "session": false
+      },
+      {
+        "name": "receive-cookie-deprecation",
+        "domain": ".rubiconproject.com",
+        "path": "/",
+        "expires": 1734449968393,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "bito",
+        "domain": ".bidr.io",
+        "path": "/",
+        "expires": 1760787558392,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "bitoIsSecure",
+        "domain": ".bidr.io",
+        "path": "/",
+        "expires": 1760787558392,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "bcookie",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1758209959466,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "lidc",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1726760359466,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "anj",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 1734449958922,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uids",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 1734449958922,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "rubiconUID",
+        "domain": ".ssp.wknd.ai",
+        "path": "/",
+        "session": true,
+        "sameSite": "None"
+      },
+      {
+        "name": "csuuid",
+        "domain": ".primis.tech",
+        "path": "/",
+        "expires": 1728833959239,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "geoData",
+        "domain": ".cnn.com",
+        "path": "/",
+        "session": true,
+        "sameSite": "None"
+      },
+      {
+        "name": "cu",
+        "domain": ".ipredictive.com",
+        "path": "/",
+        "expires": 1758209959379,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "id5",
+        "domain": ".id5-sync.com",
+        "path": "/",
+        "expires": 1734449959464,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "id5_unrecognized",
+        "domain": ".id5-sync.com",
+        "path": "/",
+        "expires": 1734449959464,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ljtrtb_80",
+        "domain": ".lijit.com",
+        "path": "/",
+        "expires": 1758209959802,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "receive-cookie-deprecation",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449960404,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "chkChromeAb67Sec",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449962776,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KADUSERCOOKIE",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1758209962776,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "pi",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1726760362776,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "DPSync4",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449962776,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "SyncRTB4",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449962776,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "IDSYNC",
+        "domain": ".analytics.yahoo.com",
+        "path": "/",
+        "expires": 1758209962992,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "TapAd_TS",
+        "domain": ".tapad.com",
+        "path": "/",
+        "expires": 1731857963267,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "TapAd_DID",
+        "domain": ".tapad.com",
+        "path": "/",
+        "expires": 1731857963267,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "TDCPM",
+        "domain": ".adsrvr.org",
+        "path": "/",
+        "expires": 1758209963041,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_aGeoIp",
+        "domain": ".ambientdsp.com",
+        "path": "/",
+        "expires": 1726760363096,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_aUID",
+        "domain": ".ambientdsp.com",
+        "path": "/",
+        "expires": 1789745963096,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "suid",
+        "domain": ".simpli.fi",
+        "path": "/",
+        "expires": 1758296363238,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_cc_dc",
+        "domain": ".crwdcntrl.net",
+        "path": "/",
+        "expires": 1749999960240,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_cc_id",
+        "domain": ".crwdcntrl.net",
+        "path": "/",
+        "expires": 1749999960240,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "TapAd_3WAY_SYNCS",
+        "domain": ".tapad.com",
+        "path": "/",
+        "expires": 1731857963267,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_377",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449963371,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_1290",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1729265963266,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_57",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449963267,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_80",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449963378,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "SEUNCY",
+        "domain": ".semasio.net",
+        "path": "/",
+        "expires": 1758209963537,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uuid",
+        "domain": ".mathtag.com",
+        "path": "/",
+        "expires": 1760629164786,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uid",
+        "domain": ".turn.com",
+        "path": "/",
+        "expires": 1742225963796,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_27",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449963896,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "PugT",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1729265963898,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_22",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1729265963898,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "nexus-web-application-identifier",
+        "domain": "edition.cnn.com",
+        "path": "/",
+        "expires": 3874157612724,
+        "session": false
+      },
+      {
+        "name": "akacd_cvp_prod_ion",
+        "domain": "turnip.cdn.turner.com",
+        "path": "/",
+        "expires": 1726674088020,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "umto",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1726767568000,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "bea4r",
+        "domain": "edition.cnn.com",
+        "path": "/",
+        "expires": 1758209968000,
+        "session": false
+      },
+      {
+        "name": "_v__chartbeat3",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1760801968000,
+        "session": false
+      },
+      {
+        "name": "audit_p",
+        "domain": ".rubiconproject.com",
+        "path": "/",
+        "expires": 1758209968393,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "audit",
+        "domain": ".rubiconproject.com",
+        "path": "/",
+        "expires": 1758209968393,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "tvid",
+        "domain": ".tremorhub.com",
+        "path": "/",
+        "expires": 1758230869721,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uid",
+        "domain": ".criteo.com",
+        "path": "/",
+        "expires": 1760369970664,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "tvssa",
+        "domain": ".tremorhub.com",
+        "path": "/",
+        "expires": 1727105969721,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "cto_bundle",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1760369969000,
+        "session": false
+      },
+      {
+        "name": "SPugT",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1729265972590,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ifyr",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1758209977646,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "bea4",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1758209977647,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "zwmc",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1758209977651,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "goiz",
+        "domain": ".cnn.com",
+        "path": "/",
+        "expires": 1758209977657,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_dd_s",
+        "domain": "edition.cnn.com",
+        "path": "/",
+        "expires": 1726674882000,
+        "session": false,
+        "sameSite": "Strict"
+      }
+    ]
+  }
+}

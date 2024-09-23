@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://ais.osym.gov.tr/",
+  "finalUrl": "https://ais.osym.gov.tr/",
+  "timeout": false,
+  "testStarted": 1726852178475,
+  "testFinished": 1726852188690,
+  "data": {
+    "cmps": []
+  }
+}

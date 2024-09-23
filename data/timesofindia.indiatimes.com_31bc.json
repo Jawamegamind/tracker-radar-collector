@@ -1,0 +1,22 @@
+{
+  "initialUrl": "https://timesofindia.indiatimes.com/",
+  "finalUrl": "https://timesofindia.indiatimes.com/",
+  "timeout": true,
+  "testStarted": 1726852085738,
+  "testFinished": 1726852120655,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "Onetrust",
+        "open": false,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [],
+        "snippets": []
+      }
+    ]
+  }
+}

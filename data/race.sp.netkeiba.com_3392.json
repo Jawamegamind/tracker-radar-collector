@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://race.sp.netkeiba.com/",
+  "finalUrl": "https://race.sp.netkeiba.com/",
+  "timeout": true,
+  "testStarted": 1726852102824,
+  "testFinished": 1726852137709,
+  "data": {
+    "cmps": []
+  }
+}

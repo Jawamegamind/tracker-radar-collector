@@ -1,0 +1,26 @@
+{
+  "initialUrl": "https://www.businessinsider.com/",
+  "finalUrl": "https://www.businessinsider.com/",
+  "timeout": true,
+  "testStarted": 1726851833614,
+  "testFinished": 1726851866482,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "osano",
+        "open": true,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [
+          "/by clicking.*(accept|agree|allow)/gi"
+        ],
+        "snippets": [
+          "By clicking “Sign Up”, you accept"
+        ]
+      }
+    ]
+  }
+}

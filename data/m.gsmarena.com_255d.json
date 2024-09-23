@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://m.gsmarena.com/",
+  "finalUrl": "https://m.gsmarena.com/",
+  "timeout": false,
+  "testStarted": 1726851738604,
+  "testFinished": 1726851755451,
+  "data": {
+    "cmps": []
+  }
+}

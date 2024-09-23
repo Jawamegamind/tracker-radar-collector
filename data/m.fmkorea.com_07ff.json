@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://m.fmkorea.com/",
+  "finalUrl": "https://www.fmkorea.com/",
+  "timeout": false,
+  "testStarted": 1726852098728,
+  "testFinished": 1726852117831,
+  "data": {
+    "cmps": []
+  }
+}

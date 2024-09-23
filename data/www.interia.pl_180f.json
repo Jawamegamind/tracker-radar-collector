@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.interia.pl/",
+  "finalUrl": "https://www.interia.pl/",
+  "timeout": true,
+  "testStarted": 1726852136876,
+  "testFinished": 1726852177878,
+  "data": {
+    "cmps": []
+  }
+}

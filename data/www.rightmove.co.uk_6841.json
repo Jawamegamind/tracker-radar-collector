@@ -1,0 +1,37 @@
+{
+  "initialUrl": "https://www.rightmove.co.uk/",
+  "finalUrl": "https://www.rightmove.co.uk/",
+  "timeout": false,
+  "testStarted": 1726851757480,
+  "testFinished": 1726851767657,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "Onetrust",
+        "open": true,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [
+          "/accept all/gi",
+          "/reject all/gi",
+          "/we (use|serve)( optional)? cookies/gi",
+          "/(this|our) (web)?site.*cookies/gi",
+          "/we and our partners.*cookies/gi",
+          "/store and\\/or access information.*on a device/gi"
+        ],
+        "snippets": [
+          "Accept all",
+          "Reject All",
+          "Reject all",
+          "we use cookies",
+          "our Website. For more details, refer to our Privacy Policy.Learn more about how we use cookies",
+          "we and our partners process data to provide,\" whereas selecting \"Reject All\" or withdrawing your consent will disable them. If trackers are disabled, some content and ads you see may not be as relevan",
+          "Store and/or access information on a device"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "initialUrl": "https://freeip.me/",
+  "finalUrl": "https://freeip.me/",
+  "timeout": false,
+  "testStarted": 1726852116209,
+  "testFinished": 1726852124136,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "Complianz notice",
+        "open": false,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [],
+        "snippets": []
+      }
+    ]
+  }
+}

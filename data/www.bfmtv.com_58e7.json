@@ -1,0 +1,26 @@
+{
+  "initialUrl": "https://www.bfmtv.com/",
+  "finalUrl": "https://www.bfmtv.com/",
+  "timeout": false,
+  "testStarted": 1726852038965,
+  "testFinished": 1726852064821,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "",
+        "open": false,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [
+          "/cookies (and|or) .* technologies/gi"
+        ],
+        "snippets": [
+          "cookies or similar technologies"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://x8.rusoska.mobi/",
+  "finalUrl": "chrome-error://chromewebdata/",
+  "timeout": true,
+  "testStarted": 1726851897784,
+  "testFinished": 1726851932773,
+  "data": {
+    "cmps": []
+  }
+}

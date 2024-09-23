@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.avito.ru/",
+  "finalUrl": "https://www.avito.ru/",
+  "timeout": true,
+  "testStarted": 1726851766894,
+  "testFinished": 1726851801726,
+  "data": {
+    "cmps": []
+  }
+}

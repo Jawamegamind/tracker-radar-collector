@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.infobae.com/",
+  "finalUrl": "https://www.infobae.com/america/",
+  "timeout": false,
+  "testStarted": 1726851755854,
+  "testFinished": 1726851781094,
+  "data": {
+    "cmps": []
+  }
+}

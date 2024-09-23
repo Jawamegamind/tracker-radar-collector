@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://weathernews.jp/",
+  "finalUrl": "https://weathernews.jp/",
+  "timeout": true,
+  "testStarted": 1726851986996,
+  "testFinished": 1726852031590,
+  "data": {
+    "cmps": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://m.search.naver.com/",
+  "finalUrl": "https://m.naver.com/",
+  "timeout": false,
+  "testStarted": 1726851822771,
+  "testFinished": 1726851847083,
+  "data": {
+    "cmps": []
+  }
+}

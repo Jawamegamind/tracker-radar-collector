@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://duckduckgo.com/",
+  "finalUrl": "https://duckduckgo.com/",
+  "timeout": false,
+  "testStarted": 1726851814155,
+  "testFinished": 1726851821280,
+  "data": {
+    "cmps": []
+  }
+}

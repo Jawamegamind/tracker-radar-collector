@@ -1,0 +1,10 @@
+{
+  "initialUrl": "http://rx.sp.mbga.jp/",
+  "finalUrl": "https://sp.mbga.jp/",
+  "timeout": false,
+  "testStarted": 1726852161634,
+  "testFinished": 1726852178142,
+  "data": {
+    "cmps": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://missav.com/",
+  "finalUrl": "chrome-error://chromewebdata/",
+  "timeout": true,
+  "testStarted": 1726851845461,
+  "testFinished": 1726851880474,
+  "data": {
+    "cmps": []
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "initialUrl": "https://zoom.us/",
+  "finalUrl": "https://zoom.us/",
+  "timeout": false,
+  "testStarted": 1726851827274,
+  "testFinished": 1726851836873,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "Onetrust",
+        "open": true,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [
+          "/accept cookies/gi",
+          "/(this|our) (web)?site.*cookies/gi",
+          "/cookies (and|or) .* technologies/gi",
+          "/we and our partners.*cookies/gi"
+        ],
+        "snippets": [
+          "ACCEPT COOKIES",
+          "our site work. We and our partners would also like to set additional cookies",
+          "cookies and similar technologies",
+          "We and our partners would also like to set additional cookies"
+        ]
+      }
+    ]
+  }
+}

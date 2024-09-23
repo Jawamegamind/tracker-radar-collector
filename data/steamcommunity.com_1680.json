@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://steamcommunity.com/",
+  "finalUrl": "https://steamcommunity.com/",
+  "timeout": false,
+  "testStarted": 1726852041479,
+  "testFinished": 1726852056863,
+  "data": {
+    "cmps": []
+  }
+}

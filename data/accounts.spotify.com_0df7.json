@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://accounts.spotify.com/",
+  "finalUrl": "https://accounts.spotify.com/en/login",
+  "timeout": true,
+  "testStarted": 1726852187011,
+  "testFinished": 1726852221879,
+  "data": {
+    "cmps": []
+  }
+}

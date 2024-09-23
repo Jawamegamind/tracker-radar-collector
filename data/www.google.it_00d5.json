@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.google.it/",
+  "finalUrl": "https://www.google.it/",
+  "timeout": false,
+  "testStarted": 1726851736700,
+  "testFinished": 1726851746413,
+  "data": {
+    "cmps": []
+  }
+}

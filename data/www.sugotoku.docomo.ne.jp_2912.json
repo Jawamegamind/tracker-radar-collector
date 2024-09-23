@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.sugotoku.docomo.ne.jp/",
+  "finalUrl": "https://www.sugotoku.docomo.ne.jp/cs/top.html",
+  "timeout": false,
+  "testStarted": 1726851796828,
+  "testFinished": 1726851813746,
+  "data": {
+    "cmps": []
+  }
+}

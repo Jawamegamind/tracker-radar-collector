@@ -1,0 +1,22 @@
+{
+  "initialUrl": "https://www.hepsiburada.com/",
+  "finalUrl": "https://www.hepsiburada.com/",
+  "timeout": false,
+  "testStarted": 1726852058264,
+  "testFinished": 1726852076459,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "Onetrust",
+        "open": true,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [],
+        "snippets": []
+      }
+    ]
+  }
+}

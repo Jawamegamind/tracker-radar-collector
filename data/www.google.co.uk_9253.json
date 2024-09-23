@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.google.co.uk/",
+  "finalUrl": "https://www.google.co.uk/",
+  "timeout": false,
+  "testStarted": 1726851721088,
+  "testFinished": 1726851730560,
+  "data": {
+    "cmps": []
+  }
+}

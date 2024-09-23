@@ -1,0 +1,911 @@
+{
+  "initialUrl": "https://www.nytimes.com/",
+  "finalUrl": "https://www.nytimes.com/",
+  "timeout": true,
+  "testStarted": 1726673949236,
+  "testFinished": 1726673984552,
+  "data": {
+    "cmps": [],
+    "cookies": [
+      {
+        "name": "sync",
+        "domain": ".3lift.com",
+        "path": "/sync",
+        "expires": 1734449960253,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "nyt-a",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1758209979887,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "nyt-gdpr",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1726695564675,
+        "session": false
+      },
+      {
+        "name": "nyt-purr",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1758209950516,
+        "session": false,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "nyt-geo",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1726695550516,
+        "session": false
+      },
+      {
+        "name": "nyt-b3-traceid",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "session": true,
+        "sameSite": "None"
+      },
+      {
+        "name": "sessionActive",
+        "domain": ".et.nytimes.com",
+        "path": "/",
+        "expires": 1726675779888,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "sessionIndex",
+        "domain": ".et.nytimes.com",
+        "path": "/",
+        "expires": 1758209951936,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "et-ppvid",
+        "domain": ".et.nytimes.com",
+        "path": "/",
+        "expires": 1726760379888,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "__gads",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1760369952000,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "__gpi",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1760369952000,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "__eoi",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1742225952000,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "IDE",
+        "domain": ".doubleclick.net",
+        "path": "/",
+        "expires": 1789745953409,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "receive-cookie-deprecation",
+        "domain": ".openx.net",
+        "path": "/",
+        "expires": 1758209956131,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "receive-cookie-deprecation",
+        "domain": ".3lift.com",
+        "path": "/",
+        "expires": 1734449956236,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "XANDR_PANID",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 1734449970701,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "icu",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 1734449956271,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "receive-cookie-deprecation",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 2041169970701,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uuid2",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 1734449970701,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "receive-cookie-deprecation",
+        "domain": ".casalemedia.com",
+        "path": "/",
+        "expires": 1758209956284,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "receive-cookie-deprecation",
+        "domain": "prebid.media.net",
+        "path": "/",
+        "expires": 1742225956424,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "khaos",
+        "domain": ".rubiconproject.com",
+        "path": "/",
+        "expires": 1758209972408,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "CMID",
+        "domain": ".casalemedia.com",
+        "path": "/",
+        "expires": 1758209969803,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "CMPS",
+        "domain": ".casalemedia.com",
+        "path": "/",
+        "expires": 1734449960000,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "CMPRO",
+        "domain": ".casalemedia.com",
+        "path": "/",
+        "expires": 1734449969804,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "tluidp",
+        "domain": ".3lift.com",
+        "path": "/",
+        "expires": 1734449967249,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "tluid",
+        "domain": ".3lift.com",
+        "path": "/",
+        "expires": 1734449967249,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "i",
+        "domain": ".openx.net",
+        "path": "/",
+        "expires": 1758209967277,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "visitor-id",
+        "domain": ".media.net",
+        "path": "/",
+        "expires": 1758209960431,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "TDID",
+        "domain": ".adsrvr.org",
+        "path": "/",
+        "expires": 1758209970445,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "C",
+        "domain": ".adform.net",
+        "path": "/",
+        "expires": 1729265960671,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uid",
+        "domain": ".adform.net",
+        "path": "/",
+        "expires": 1731857971230,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uid",
+        "domain": ".criteo.com",
+        "path": "/",
+        "expires": 1760369960821,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KADUSERCOOKIE",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1758209971067,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "DotomiTest",
+        "domain": ".dotomi.com",
+        "path": "/",
+        "expires": 1726673991690,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "data-c",
+        "domain": ".media.net",
+        "path": "/",
+        "expires": 1729265961900,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "data-c-ts",
+        "domain": ".media.net",
+        "path": "/",
+        "expires": 1729265961900,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "data-co",
+        "domain": ".media.net",
+        "path": "/",
+        "expires": 1758123562140,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "UID",
+        "domain": ".scorecardresearch.com",
+        "path": "/",
+        "expires": 1760369963387,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "XID",
+        "domain": ".scorecardresearch.com",
+        "path": "/",
+        "expires": 1760369963388,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_t_tests",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1726677564000,
+        "session": false
+      },
+      {
+        "name": "datadome",
+        "domain": ".www.nytimes.com",
+        "path": "/",
+        "expires": 1758209964807,
+        "session": false,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "jkidd-s",
+        "domain": "a.nytimes.com",
+        "path": "/",
+        "session": true
+      },
+      {
+        "name": "jkidd-p",
+        "domain": "a.nytimes.com",
+        "path": "/",
+        "expires": 1758209965591,
+        "session": false
+      },
+      {
+        "name": "nyt-jkidd",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1758209965591,
+        "session": false
+      },
+      {
+        "name": "purr-cache",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1760843965655,
+        "session": false,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "purr-pref-agent",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1760843965655,
+        "session": false,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "_cb",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1760801966000,
+        "session": false
+      },
+      {
+        "name": "_chartbeat2",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1760801966000,
+        "session": false
+      },
+      {
+        "name": "_cb_svref",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1726675766000,
+        "session": false
+      },
+      {
+        "name": "ad-id",
+        "domain": ".amazon-adsystem.com",
+        "path": "/",
+        "expires": 1743521970549,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ad-privacy",
+        "domain": ".amazon-adsystem.com",
+        "path": "/",
+        "expires": 1885563570550,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_gcl_au",
+        "domain": ".nytimes.com",
+        "path": "/",
+        "expires": 1734449966000,
+        "session": false
+      },
+      {
+        "name": "pd",
+        "domain": ".openx.net",
+        "path": "/",
+        "expires": 1727969967277,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "cid_e276652fa2784636910256cad0f212eb",
+        "domain": ".ctnsnet.com",
+        "path": "/",
+        "expires": 1758209967638,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "demdex",
+        "domain": ".demdex.net",
+        "path": "/",
+        "expires": 1742225968045,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_knxq_",
+        "domain": ".brand-display.com",
+        "path": "/",
+        "expires": 1773329967680,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "mc",
+        "domain": ".quantserve.com",
+        "path": "/",
+        "expires": 1760888367750,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "khaos_p",
+        "domain": ".rubiconproject.com",
+        "path": "/",
+        "expires": 1758209972408,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "dpm",
+        "domain": ".dpm.demdex.net",
+        "path": "/",
+        "expires": 1742225968045,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "TapAd_TS",
+        "domain": ".tapad.com",
+        "path": "/",
+        "expires": 1731857971285,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "TapAd_DID",
+        "domain": ".tapad.com",
+        "path": "/",
+        "expires": 1731857971285,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_80",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449968250,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_cc_cc",
+        "domain": ".crwdcntrl.net",
+        "path": "/",
+        "session": true,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_377",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449969140,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "TapAd_3WAY_SYNCS",
+        "domain": ".tapad.com",
+        "path": "/",
+        "expires": 1731857971285,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "SEUNCY",
+        "domain": ".semasio.net",
+        "path": "/",
+        "expires": 1758209968635,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "A3",
+        "domain": ".yahoo.com",
+        "path": "/",
+        "expires": 1758231571674,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uuid",
+        "domain": ".mathtag.com",
+        "path": "/",
+        "expires": 1760629168714,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "suid",
+        "domain": ".simpli.fi",
+        "path": "/",
+        "expires": 1758296368869,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_57",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449968927,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_27",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449968927,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "TDCPM",
+        "domain": ".adsrvr.org",
+        "path": "/",
+        "expires": 1758209970446,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "receive-cookie-deprecation",
+        "domain": ".rubiconproject.com",
+        "path": "/",
+        "expires": 1734449972408,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "anj",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 1734449970701,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uids",
+        "domain": ".adnxs.com",
+        "path": "/",
+        "expires": 1734449970701,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "chkChromeAb67Sec",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449971067,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "pi",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1726760371067,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "DPSync4",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449971067,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "SyncRTB4",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449971067,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "sp",
+        "domain": ".quantserve.com",
+        "path": "/",
+        "expires": 1734449971197,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "bcookie",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1758209972239,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "lidc",
+        "domain": ".linkedin.com",
+        "path": "/",
+        "expires": 1726760372239,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_153",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1734449971298,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "bito",
+        "domain": ".bidr.io",
+        "path": "/",
+        "expires": 1760787571388,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "bitoIsSecure",
+        "domain": ".bidr.io",
+        "path": "/",
+        "expires": 1760787571388,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "uid",
+        "domain": ".turn.com",
+        "path": "/",
+        "expires": 1742225971492,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "rlas3",
+        "domain": ".rlcdn.com",
+        "path": "/",
+        "expires": 1758209971820,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "g",
+        "domain": ".creativecdn.com",
+        "path": "/",
+        "expires": 1758209971554,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ts",
+        "domain": ".creativecdn.com",
+        "path": "/",
+        "expires": 1758209971554,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_22",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1729265971596,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "PugT",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1729265971808,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_aGeoIp",
+        "domain": ".ambientdsp.com",
+        "path": "/",
+        "expires": 1726760371657,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_aUID",
+        "domain": ".ambientdsp.com",
+        "path": "/",
+        "expires": 1789745971657,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "IDSYNC",
+        "domain": ".analytics.yahoo.com",
+        "path": "/",
+        "expires": 1758209971674,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_1290",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1729265971762,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "KRTBCOOKIE_632",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1729265971808,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "pxrc",
+        "domain": ".rlcdn.com",
+        "path": "/",
+        "expires": 1731857971820,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "csuuid",
+        "domain": ".primis.tech",
+        "path": "/",
+        "expires": 1728833971888,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "everest_g_v2",
+        "domain": ".everesttech.net",
+        "path": "/",
+        "expires": 1758209972335,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "cu",
+        "domain": ".ipredictive.com",
+        "path": "/",
+        "expires": 1758209972123,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "did",
+        "domain": ".pippio.com",
+        "path": "/",
+        "expires": 1758209972155,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "didts",
+        "domain": ".pippio.com",
+        "path": "/",
+        "expires": 1758209972155,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "nnls",
+        "domain": ".pippio.com",
+        "path": "/",
+        "expires": 1731857972155,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "pxrc",
+        "domain": ".pippio.com",
+        "path": "/",
+        "expires": 1731857972156,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "audit_p",
+        "domain": ".rubiconproject.com",
+        "path": "/",
+        "expires": 1758209972408,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "audit",
+        "domain": ".rubiconproject.com",
+        "path": "/",
+        "expires": 1758209972408,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_sv3_7",
+        "domain": ".a-mo.net",
+        "path": "/",
+        "expires": 1726760372648,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "amuid2",
+        "domain": ".a-mo.net",
+        "path": "/",
+        "expires": 1758209972648,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "sd_amuid2",
+        "domain": ".prebid.a-mo.net",
+        "path": "/",
+        "expires": 1758209972648,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "ljt_reader",
+        "domain": ".lijit.com",
+        "path": "/",
+        "expires": 1758209973052,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_ljtrtb_80",
+        "domain": ".lijit.com",
+        "path": "/",
+        "expires": 1758209973052,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "SPugT",
+        "domain": ".pubmatic.com",
+        "path": "/",
+        "expires": 1729265973199,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "_dd_s",
+        "domain": "www.nytimes.com",
+        "path": "/",
+        "expires": 1726674884000,
+        "session": false,
+        "sameSite": "None"
+      }
+    ]
+  }
+}

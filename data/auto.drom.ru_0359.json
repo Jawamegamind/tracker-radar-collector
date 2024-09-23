@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://auto.drom.ru/",
+  "finalUrl": "https://auto.drom.ru/",
+  "timeout": false,
+  "testStarted": 1726851801546,
+  "testFinished": 1726851828011,
+  "data": {
+    "cmps": []
+  }
+}

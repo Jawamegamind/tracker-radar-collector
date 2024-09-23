@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://yandex.com/",
+  "finalUrl": "https://yandex.com/",
+  "timeout": false,
+  "testStarted": 1726852159457,
+  "testFinished": 1726852173275,
+  "data": {
+    "cmps": []
+  }
+}

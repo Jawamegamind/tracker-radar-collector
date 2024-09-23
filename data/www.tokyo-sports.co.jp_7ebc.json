@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.tokyo-sports.co.jp/",
+  "finalUrl": "https://www.tokyo-sports.co.jp/",
+  "timeout": true,
+  "testStarted": 1726852124322,
+  "testFinished": 1726852159240,
+  "data": {
+    "cmps": []
+  }
+}

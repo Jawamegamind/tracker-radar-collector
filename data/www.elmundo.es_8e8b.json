@@ -1,0 +1,30 @@
+{
+  "initialUrl": "https://www.elmundo.es/",
+  "finalUrl": "https://www.elmundo.es/",
+  "timeout": false,
+  "testStarted": 1726851794081,
+  "testFinished": 1726851814563,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "com_didomi.io",
+        "open": false,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [
+          "/cookies (and|or) .* technologies/gi",
+          "/we and our partners.*cookies/gi",
+          "/store and\\/or access information.*on a device/gi"
+        ],
+        "snippets": [
+          "cookies or similar technologies",
+          "we and our partners use cookies",
+          "Store and/or access information on a device"
+        ]
+      }
+    ]
+  }
+}

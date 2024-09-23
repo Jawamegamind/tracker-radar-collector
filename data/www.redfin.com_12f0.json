@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.redfin.com/",
+  "finalUrl": "https://www.redfin.com/",
+  "timeout": true,
+  "testStarted": 1726851847400,
+  "testFinished": 1726851889714,
+  "data": {
+    "cmps": []
+  }
+}

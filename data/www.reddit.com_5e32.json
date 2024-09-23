@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.reddit.com/",
+  "finalUrl": "https://www.reddit.com/?rdt=34595",
+  "timeout": false,
+  "testStarted": 1726852089471,
+  "testFinished": 1726852103603,
+  "data": {
+    "cmps": []
+  }
+}

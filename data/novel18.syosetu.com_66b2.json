@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://novel18.syosetu.com/",
+  "finalUrl": "https://nl.syosetu.com/",
+  "timeout": false,
+  "testStarted": 1726852088906,
+  "testFinished": 1726852105043,
+  "data": {
+    "cmps": []
+  }
+}

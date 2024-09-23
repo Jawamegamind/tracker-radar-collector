@@ -1,0 +1,26 @@
+{
+  "initialUrl": "https://www.lefigaro.fr/",
+  "finalUrl": "https://www.lefigaro.fr/",
+  "timeout": false,
+  "testStarted": 1726851771637,
+  "testFinished": 1726851785513,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "",
+        "open": false,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [
+          "/accept all/gi"
+        ],
+        "snippets": [
+          "Accept all"
+        ]
+      }
+    ]
+  }
+}

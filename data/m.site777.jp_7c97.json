@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://m.site777.jp/",
+  "finalUrl": "https://m.site777.jp/f/A0100.do",
+  "timeout": true,
+  "testStarted": 1726852173058,
+  "testFinished": 1726852207860,
+  "data": {
+    "cmps": []
+  }
+}

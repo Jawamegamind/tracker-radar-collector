@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://lichess.org/",
+  "finalUrl": "https://lichess.org/",
+  "timeout": false,
+  "testStarted": 1726852178233,
+  "testFinished": 1726852186805,
+  "data": {
+    "cmps": []
+  }
+}

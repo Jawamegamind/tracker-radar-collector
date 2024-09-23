@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.amazon.in/",
+  "finalUrl": "https://www.amazon.in/",
+  "timeout": false,
+  "testStarted": 1726851731608,
+  "testFinished": 1726851750875,
+  "data": {
+    "cmps": []
+  }
+}

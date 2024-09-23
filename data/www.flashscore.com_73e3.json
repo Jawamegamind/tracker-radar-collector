@@ -1,0 +1,32 @@
+{
+  "initialUrl": "https://www.flashscore.com/",
+  "finalUrl": "https://www.flashscore.com/",
+  "timeout": false,
+  "testStarted": 1726852057078,
+  "testFinished": 1726852081298,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "Onetrust",
+        "open": true,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [
+          "/reject all/gi",
+          "/(this|our) (web)?site.*cookies/gi",
+          "/such as cookies/gi",
+          "/store and\\/or access information.*on a device/gi"
+        ],
+        "snippets": [
+          "Reject All",
+          "this site by personalizing the content and ads you view if you agree to let us use web tracking technologies such as cookies",
+          "such as cookies",
+          "Store and/or access information on a device"
+        ]
+      }
+    ]
+  }
+}

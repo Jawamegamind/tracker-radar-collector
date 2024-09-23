@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.kleinanzeigen.de/",
+  "finalUrl": "https://www.kleinanzeigen.de/",
+  "timeout": false,
+  "testStarted": 1726852065222,
+  "testFinished": 1726852071837,
+  "data": {
+    "cmps": []
+  }
+}

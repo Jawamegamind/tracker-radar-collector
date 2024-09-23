@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://n.news.naver.com/",
+  "finalUrl": "https://news.naver.com/",
+  "timeout": false,
+  "testStarted": 1726851802959,
+  "testFinished": 1726851827056,
+  "data": {
+    "cmps": []
+  }
+}

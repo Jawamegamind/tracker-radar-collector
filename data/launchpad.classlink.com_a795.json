@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://launchpad.classlink.com/",
+  "finalUrl": "https://launchpad.classlink.com/",
+  "timeout": false,
+  "testStarted": 1726851865986,
+  "testFinished": 1726851888967,
+  "data": {
+    "cmps": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://m.flashscore.fr/",
+  "finalUrl": "https://m.flashscore.fr/",
+  "timeout": false,
+  "testStarted": 1726852072224,
+  "testFinished": 1726852085541,
+  "data": {
+    "cmps": []
+  }
+}

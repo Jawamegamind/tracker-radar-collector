@@ -1,0 +1,36 @@
+{
+  "global": {
+    "validFiles": 93,
+    "failingFiles": 1,
+    "timeouts": 0,
+    "totalTime": 0,
+    "avgTime": 0
+  },
+  "cmps": {
+    "totalEntries": 15,
+    "avgEntries": 0.16129032258064516,
+    "topCMPs": [
+      [
+        "Onetrust",
+        8
+      ],
+      [
+        "Unknown CMP",
+        4
+      ],
+      [
+        "Complianz notice",
+        1
+      ],
+      [
+        "osano",
+        1
+      ],
+      [
+        "com_didomi.io",
+        1
+      ]
+    ],
+    "empty": 78
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.bestbuy.com/",
+  "finalUrl": "https://www.bestbuy.com/",
+  "timeout": false,
+  "testStarted": 1726851731677,
+  "testFinished": 1726851744716,
+  "data": {
+    "cmps": []
+  }
+}

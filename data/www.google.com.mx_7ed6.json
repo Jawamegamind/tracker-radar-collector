@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.google.com.mx/",
+  "finalUrl": "https://www.google.com.mx/",
+  "timeout": false,
+  "testStarted": 1726851721083,
+  "testFinished": 1726851730578,
+  "data": {
+    "cmps": []
+  }
+}

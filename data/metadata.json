@@ -1,0 +1,22 @@
+{
+  "startTime": 1726851713967,
+  "endTime": 1726852264756,
+  "result": "success",
+  "stats": {
+    "urls": 101,
+    "skipped": 1,
+    "successes": 90,
+    "failures": 10
+  },
+  "config": {
+    "dataCollectors": [
+      "cmps"
+    ]
+  },
+  "environment": {
+    "projectVersion": "1.0.0",
+    "hostname": "Jawads-MacBook-Air.local",
+    "cpus": 8,
+    "username": "jawadsaeed"
+  }
+}

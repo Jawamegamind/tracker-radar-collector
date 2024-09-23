@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.sanook.com/",
+  "finalUrl": "https://www.sanook.com/#goog_rewarded",
+  "timeout": true,
+  "testStarted": 1726851731657,
+  "testFinished": 1726851766692,
+  "data": {
+    "cmps": []
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "initialUrl": "https://apple.com/",
+  "finalUrl": "https://www.apple.com/",
+  "timeout": false,
+  "testStarted": 1726673949235,
+  "testFinished": 1726673963215,
+  "data": {
+    "cmps": [],
+    "cookies": [
+      {
+        "name": "geo",
+        "domain": ".apple.com",
+        "path": "/",
+        "session": true
+      },
+      {
+        "name": "at_check",
+        "domain": ".apple.com",
+        "path": "/",
+        "session": true
+      },
+      {
+        "name": "dssid2",
+        "domain": ".apple.com",
+        "path": "/",
+        "expires": 1758209954211,
+        "session": false
+      },
+      {
+        "name": "dssf",
+        "domain": ".apple.com",
+        "path": "/",
+        "expires": 1758209954211,
+        "session": false
+      },
+      {
+        "name": "as_pcts",
+        "domain": ".apple.com",
+        "path": "/",
+        "session": true
+      },
+      {
+        "name": "as_dc",
+        "domain": ".apple.com",
+        "path": "/",
+        "expires": 1726681154211,
+        "session": false
+      },
+      {
+        "name": "s_fid",
+        "domain": ".apple.com",
+        "path": "/",
+        "expires": 1726675754000,
+        "session": false
+      },
+      {
+        "name": "s_cc",
+        "domain": ".apple.com",
+        "path": "/",
+        "session": true
+      },
+      {
+        "name": "mk_epub",
+        "domain": ".apple.com",
+        "path": "/",
+        "session": true
+      },
+      {
+        "name": "s_vi",
+        "domain": ".apple.com",
+        "path": "/",
+        "expires": 1726675755232,
+        "session": false,
+        "sameSite": "None"
+      },
+      {
+        "name": "mbox",
+        "domain": ".apple.com",
+        "path": "/",
+        "expires": 1726675813000,
+        "session": false
+      }
+    ]
+  }
+}

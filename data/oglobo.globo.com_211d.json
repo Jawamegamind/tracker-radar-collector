@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://oglobo.globo.com/",
+  "finalUrl": "https://oglobo.globo.com/",
+  "timeout": true,
+  "testStarted": 1726851830773,
+  "testFinished": 1726851865675,
+  "data": {
+    "cmps": []
+  }
+}

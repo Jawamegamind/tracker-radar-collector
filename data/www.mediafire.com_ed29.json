@@ -1,0 +1,26 @@
+{
+  "initialUrl": "https://www.mediafire.com/",
+  "finalUrl": "https://www.mediafire.com/",
+  "timeout": true,
+  "testStarted": 1726852003951,
+  "testFinished": 1726852038775,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "",
+        "open": false,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [
+          "/by continuing/gi"
+        ],
+        "snippets": [
+          "By continuing"
+        ]
+      }
+    ]
+  }
+}

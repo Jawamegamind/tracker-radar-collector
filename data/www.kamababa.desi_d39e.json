@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.kamababa.desi/",
+  "finalUrl": "chrome-error://chromewebdata/",
+  "timeout": true,
+  "testStarted": 1726851866674,
+  "testFinished": 1726851901638,
+  "data": {
+    "cmps": []
+  }
+}

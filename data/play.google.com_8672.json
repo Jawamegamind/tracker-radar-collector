@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://play.google.com/",
+  "finalUrl": "https://play.google.com/store/games",
+  "timeout": false,
+  "testStarted": 1726852035681,
+  "testFinished": 1726852048267,
+  "data": {
+    "cmps": []
+  }
+}

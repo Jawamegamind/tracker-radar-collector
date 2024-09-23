@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.sidrachain.com/",
+  "finalUrl": "https://www.sidrachain.com/login",
+  "timeout": false,
+  "testStarted": 1726851721088,
+  "testFinished": 1726851731146,
+  "data": {
+    "cmps": []
+  }
+}

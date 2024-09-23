@@ -1,0 +1,22 @@
+{
+  "initialUrl": "https://www.flashscore.pl/",
+  "finalUrl": "https://www.flashscore.pl/",
+  "timeout": false,
+  "testStarted": 1726851746596,
+  "testFinished": 1726851766219,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "Onetrust",
+        "open": true,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [],
+        "snippets": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.neopets.com/",
+  "finalUrl": "https://www.neopets.com/",
+  "timeout": true,
+  "testStarted": 1726851841881,
+  "testFinished": 1726851877893,
+  "data": {
+    "cmps": []
+  }
+}

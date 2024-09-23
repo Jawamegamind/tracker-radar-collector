@@ -1,0 +1,29 @@
+{
+  "initialUrl": "https://www.ikea.com/",
+  "finalUrl": "https://www.ikea.com/",
+  "timeout": false,
+  "testStarted": 1726851913144,
+  "testFinished": 1726851922367,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "Onetrust",
+        "open": true,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [
+          "/accept all/gi",
+          "/(this|our) (web)?site.*cookies/gi"
+        ],
+        "snippets": [
+          "Accept all",
+          "our website we use strictly necessary (to ensure our site works properly), analytical (tells us how the site is used), functional (user preferences) and marketing (to display relevant ads) cookies",
+          "our website, we provide links to individual country retail websites (“Go Shopping”) and to other IKEA websites, which have their own cookies"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "initialUrl": "https://www.ryanair.com/",
+  "finalUrl": "https://www.ryanair.com/ie/en",
+  "timeout": false,
+  "testStarted": 1726852120878,
+  "testFinished": 1726852136674,
+  "data": {
+    "cmps": [
+      {
+        "final": false,
+        "name": "",
+        "open": false,
+        "started": false,
+        "succeeded": false,
+        "selfTestFail": false,
+        "errors": [],
+        "patterns": [
+          "/by clicking.*(accept|agree|allow)/gi"
+        ],
+        "snippets": [
+          "By clicking “Yes, I agree”, you agree"
+        ]
+      }
+    ]
+  }
+}

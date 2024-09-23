@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.manoramaonline.com/",
+  "finalUrl": "https://www.manoramaonline.com/",
+  "timeout": true,
+  "testStarted": 1726851908214,
+  "testFinished": 1726851943505,
+  "data": {
+    "cmps": []
+  }
+}

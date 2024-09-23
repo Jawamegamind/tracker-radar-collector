@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.macys.com/",
+  "finalUrl": "https://www.macys.com/",
+  "timeout": true,
+  "testStarted": 1726852137917,
+  "testFinished": 1726852172739,
+  "data": {
+    "cmps": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://id.m.wikipedia.org/",
+  "finalUrl": "https://id.m.wikipedia.org/wiki/Halaman_Utama",
+  "timeout": false,
+  "testStarted": 1726852118081,
+  "testFinished": 1726852126176,
+  "data": {
+    "cmps": []
+  }
+}

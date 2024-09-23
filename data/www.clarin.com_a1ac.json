@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.clarin.com/",
+  "finalUrl": "https://www.clarin.com/",
+  "timeout": false,
+  "testStarted": 1726851751122,
+  "testFinished": 1726851771273,
+  "data": {
+    "cmps": []
+  }
+}

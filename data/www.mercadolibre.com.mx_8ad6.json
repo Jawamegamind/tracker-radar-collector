@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.mercadolibre.com.mx/",
+  "finalUrl": "https://www.mercadolibre.com.mx/",
+  "timeout": true,
+  "testStarted": 1726851878097,
+  "testFinished": 1726851912940,
+  "data": {
+    "cmps": []
+  }
+}

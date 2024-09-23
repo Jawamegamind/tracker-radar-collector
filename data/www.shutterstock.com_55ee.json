@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.shutterstock.com/",
+  "finalUrl": "https://www.shutterstock.com/",
+  "timeout": true,
+  "testStarted": 1726852178012,
+  "testFinished": 1726852212897,
+  "data": {
+    "cmps": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.gazzetta.it/",
+  "finalUrl": "https://www.gazzetta.it/",
+  "timeout": true,
+  "testStarted": 1726851932991,
+  "testFinished": 1726851967843,
+  "data": {
+    "cmps": []
+  }
+}

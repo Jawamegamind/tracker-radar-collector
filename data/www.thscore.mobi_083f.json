@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://www.thscore.mobi/",
+  "finalUrl": "https://www.thscore.mobi/",
+  "timeout": true,
+  "testStarted": 1726851994675,
+  "testFinished": 1726852035482,
+  "data": {
+    "cmps": []
+  }
+}

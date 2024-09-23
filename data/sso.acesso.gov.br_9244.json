@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://sso.acesso.gov.br/",
+  "finalUrl": "https://sso.acesso.gov.br/login?client_id=portal-logado.estaleiro.serpro.gov.br&authorization_id=192106381f8",
+  "timeout": false,
+  "testStarted": 1726851802077,
+  "testFinished": 1726851822446,
+  "data": {
+    "cmps": []
+  }
+}

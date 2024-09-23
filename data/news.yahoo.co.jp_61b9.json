@@ -1,0 +1,10 @@
+{
+  "initialUrl": "https://news.yahoo.co.jp/",
+  "finalUrl": "https://news.yahoo.co.jp/",
+  "timeout": true,
+  "testStarted": 1726851962031,
+  "testFinished": 1726851997891,
+  "data": {
+    "cmps": []
+  }
+}
