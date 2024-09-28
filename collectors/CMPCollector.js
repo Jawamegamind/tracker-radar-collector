@@ -15,7 +15,7 @@ const BaseCollector = require('./BaseCollector');
  * @typedef { import('@duckduckgo/autoconsent/lib/messages').OptOutResultMessage } OptOutResultMessage
  * @typedef { import('@duckduckgo/autoconsent/lib/messages').OptInResultMessage } OptInResultMessage
  * @typedef { import('@duckduckgo/autoconsent/lib/messages').DoneMessage } DoneMessage
- * @typedef { { snippets: string[], patterns: string[], uspObjects: string[] } } ScanResult
+ * @typedef { { snippets: string[], patterns: string[], uspObjects: string[], gppObjects: string[] } } ScanResult
  */
 
 // @ts-ignore
@@ -94,7 +94,8 @@ class CMPCollector extends BaseCollector {
         this.scanResult = {
             snippets: [],
             patterns: [],
-            uspObjects: []
+            uspObjects: [],
+            gppObjects: []
         };
     }
 
@@ -323,6 +324,7 @@ class CMPCollector extends BaseCollector {
         const foundPatterns = [];
         const foundSnippets = [];
         const uspStrings = [];
+        const gppObjects = [];
         const pages = await this.context.pages();
         if (pages.length > 0) {
             const page = pages[0];
@@ -373,12 +375,46 @@ class CMPCollector extends BaseCollector {
             } else {
                 console.log('No USP string retrieved.');
             }
+            // let gppObject  = [""]
+            console.log('Attempting to retrieve GPP objects...');
+            try {
+                const gppObject = await page.evaluate(() => {
+                    return new Promise(resolve => {
+                        // Check if __gpp function exists on the window object
+                        // @ts-ignore
+                        if (typeof window.__gpp !== 'function') {
+                            resolve(null); // Resolve with null if __gpp doesn't exist
+                            return;
+                        }
+                        // Call the __gpp function if it exists
+                        // @ts-ignore
+                        window.__gpp('ping', (/** @type {any} */ gppData, /** @type {any} */ success) => {
+                            if (success) {
+                                resolve(gppData);
+                            } else {
+                                resolve(null);
+                            }
+                        });
+                    });
+                });
+            
+                if (gppObject) {
+                    console.log('GPP object retrieved:', gppObject);
+                    gppObjects.push(gppObject);
+                    console.log('GPP object retrieved in the array:', gppObjects);
+                } else {
+                    console.log('No GPP object retrieved or __gpp function does not exist.');
+                }
+            } catch (error) {
+                console.log('Error retrieving GPP object:', error);
+            }
         }
         this.pendingScan.resolve();
         this.scanResult = {
             patterns: foundPatterns,
             snippets: Array.from(new Set(foundSnippets)),
-            uspObjects: uspStrings
+            uspObjects: uspStrings,
+            gppObjects: gppObjects
         };
         console.log('Scan result:', this.scanResult);
     }
@@ -427,6 +463,7 @@ class CMPCollector extends BaseCollector {
                 patterns: [],
                 snippets: [],
                 uspObjects: [],
+                gppObjects: []
             };
 
             const found = this.findMessage({type: 'popupFound', cmp: msg.cmp});
@@ -476,7 +513,8 @@ class CMPCollector extends BaseCollector {
                     errors: [],
                     patterns: this.scanResult.patterns,
                     snippets: this.scanResult.snippets,
-                    uspObjects: this.scanResult.uspObjects
+                    uspObjects: this.scanResult.uspObjects,
+                    gppObjects: this.scanResult.gppObjects
                 });
             }
         }
@@ -497,6 +535,7 @@ class CMPCollector extends BaseCollector {
  * @property {string[]} patterns
  * @property {string[]} snippets
  * @property {string[]} uspObjects
+ * @property {string[]} gppObjects
  */
 
 module.exports = CMPCollector;
