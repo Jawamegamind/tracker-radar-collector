@@ -15,7 +15,7 @@ const BaseCollector = require('./BaseCollector');
  * @typedef { import('@duckduckgo/autoconsent/lib/messages').OptOutResultMessage } OptOutResultMessage
  * @typedef { import('@duckduckgo/autoconsent/lib/messages').OptInResultMessage } OptInResultMessage
  * @typedef { import('@duckduckgo/autoconsent/lib/messages').DoneMessage } DoneMessage
- * @typedef { { snippets: string[], patterns: string[] } } ScanResult
+ * @typedef { { snippets: string[], patterns: string[], uspObjects: string[] } } ScanResult
  */
 
 // @ts-ignore
@@ -94,6 +94,7 @@ class CMPCollector extends BaseCollector {
         this.scanResult = {
             snippets: [],
             patterns: [],
+            uspObjects: []
         };
     }
 
@@ -321,6 +322,7 @@ class CMPCollector extends BaseCollector {
          */
         const foundPatterns = [];
         const foundSnippets = [];
+        const uspStrings = [];
         const pages = await this.context.pages();
         if (pages.length > 0) {
             const page = pages[0];
@@ -345,12 +347,40 @@ class CMPCollector extends BaseCollector {
                     foundSnippets.push(...matches.map(m => m.substring(0, 200)));
                 }
             }
+
+            // Need to basically call the __uspapi function on the page
+            // to get the USP strings
+            console.log('Attempting to retrieve USP string...');
+            const uspString = await page.evaluate(() => {
+                // eslint-disable-next-line no-undef
+                return new Promise(resolve => {
+                    // eslint-disable-next-line no-undef
+                    // @ts-ignore
+                    window.__uspapi('getUSPData', 1, (/** @type {any} */ uspData, /** @type {any} */ success) => {
+                        if (success) {
+                            resolve(uspData);
+                        } else {
+                            resolve('');
+                        }
+                    });
+                });
+            });
+
+            if (uspString) {
+                console.log('USP string retrieved:', uspString);
+                uspStrings.push(uspString);
+                console.log('USP string retrieved in the array:', uspStrings);
+            } else {
+                console.log('No USP string retrieved.');
+            }
         }
         this.pendingScan.resolve();
         this.scanResult = {
             patterns: foundPatterns,
             snippets: Array.from(new Set(foundSnippets)),
+            uspObjects: uspStrings
         };
+        console.log('Scan result:', this.scanResult);
     }
 
     /**
@@ -396,6 +426,7 @@ class CMPCollector extends BaseCollector {
                 errors,
                 patterns: [],
                 snippets: [],
+                uspObjects: [],
             };
 
             const found = this.findMessage({type: 'popupFound', cmp: msg.cmp});
@@ -427,11 +458,12 @@ class CMPCollector extends BaseCollector {
     async getData() {
         await this.waitForFinish();
         const results = this.collectResults();
-        if (this.scanResult.patterns.length > 0) {
+        if (this.scanResult.patterns.length > 0 || this.scanResult.snippets.length > 0 || this.scanResult.uspObjects.length > 0) {
             if (results.length > 0) {
                 results.forEach(r => {
                     r.patterns = this.scanResult.patterns;
                     r.snippets = this.scanResult.snippets;
+                    r.uspObjects = this.scanResult.uspObjects;
                 });
             } else {
                 results.push({
@@ -444,9 +476,11 @@ class CMPCollector extends BaseCollector {
                     errors: [],
                     patterns: this.scanResult.patterns,
                     snippets: this.scanResult.snippets,
+                    uspObjects: this.scanResult.uspObjects
                 });
             }
         }
+        console.log("The results are:", results);
         return results;
     }
 }
@@ -462,6 +496,7 @@ class CMPCollector extends BaseCollector {
  * @property {string[]} errors
  * @property {string[]} patterns
  * @property {string[]} snippets
+ * @property {string[]} uspObjects
  */
 
 module.exports = CMPCollector;
