@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Define the folder containing JSON files
-const dataFolder = '/Users/raahemnabeel/Desktop/Sproj/tracker-radar-collector/data2';
+const dataFolder = '/Users/jawadsaeed/Documents/SPROJ/tracker-radar-collector/data';
 
 /**
  * @typedef {Object} UspObject
@@ -195,6 +195,6 @@ const result = {
 };
 
 // Write result to a new JSON file
-fs.writeFileSync('/Users/raahemnabeel/Desktop/Sproj/tracker-radar-collector/summary/result.json', JSON.stringify(result, null, 2));
+fs.writeFileSync('/Users/jawadsaeed/Documents/SPROJ/tracker-radar-collector/summary/framework-summary.json', JSON.stringify(result, null, 2));
 
 console.log('Processing completed. Results saved in result.json.');

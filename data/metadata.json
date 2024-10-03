@@ -1,12 +1,12 @@
 {
-  "startTime": 1726851713967,
-  "endTime": 1726852264756,
+  "startTime": 1727967646832,
+  "endTime": 1727967686248,
   "result": "success",
   "stats": {
-    "urls": 101,
-    "skipped": 1,
-    "successes": 90,
-    "failures": 10
+    "urls": 1,
+    "skipped": 0,
+    "successes": 1,
+    "failures": 0
   },
   "config": {
     "dataCollectors": [

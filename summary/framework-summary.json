@@ -1,0 +1,38 @@
+{
+  "global": {
+    "validFiles": 61,
+    "failingFiles": 1,
+    "timeouts": 33,
+    "totalTime": null,
+    "avgTime": 0
+  },
+  "cmps": {
+    "totalEntries": 15,
+    "avgEntries": 0.2459016393442623,
+    "topCMPs": [
+      [
+        "Onetrust",
+        8
+      ],
+      [
+        "Unknown CMP",
+        4
+      ],
+      [
+        "Complianz notice",
+        1
+      ],
+      [
+        "osano",
+        1
+      ],
+      [
+        "com_didomi.io",
+        1
+      ]
+    ],
+    "empty": 4
+  },
+  "uspApiEntries": [],
+  "gppApiEntries": []
+}

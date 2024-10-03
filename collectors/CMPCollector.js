@@ -495,12 +495,13 @@ class CMPCollector extends BaseCollector {
     async getData() {
         await this.waitForFinish();
         const results = this.collectResults();
-        if (this.scanResult.patterns.length > 0 || this.scanResult.snippets.length > 0 || this.scanResult.uspObjects.length > 0) {
+        if (this.scanResult.patterns.length > 0 || this.scanResult.snippets.length > 0 || this.scanResult.uspObjects.length > 0 || this.scanResult.gppObjects.length > 0) {
             if (results.length > 0) {
                 results.forEach(r => {
                     r.patterns = this.scanResult.patterns;
                     r.snippets = this.scanResult.snippets;
                     r.uspObjects = this.scanResult.uspObjects;
+                    r.gppObjects = this.scanResult.gppObjects;
                 });
             } else {
                 results.push({
