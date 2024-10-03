@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Define the folder containing JSON files
-const dataFolder = './data';
+const dataFolder = '/Users/raahemnabeel/Desktop/Sproj/tracker-radar-collector/data2';
 
 /**
  * @typedef {Object} UspObject
@@ -93,11 +93,11 @@ let cmpsStats = {
   empty: 0
 };
 
-// Arrays to store URLs containing non-empty APIs
-/** @type {string[]} */
-let uspApiUrls = [];
-/** @type {string[]} */
-let gppApiUrls = [];
+// Arrays to store URLs with corresponding non-empty API values
+/** @type {Array<{ url: string, uspString: string, gppString: string }>} */
+let uspApiEntries = [];
+/** @type {Array<{ url: string, gppString: string, supportedAPIs: string[] }>} */
+let gppApiEntries = [];
 
 /**
  * Processes a single JSON file, updating global and CMP statistics.
@@ -105,48 +105,65 @@ let gppApiUrls = [];
  * @param {string} filePath - The path to the JSON file
  */
 function processFile(filePath) {
-  /** @type {InputData} */
-  const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-  const { finalUrl, timeout, testStarted, testFinished, data: cmpData } = data;
+  try {
+    /** @type {InputData} */
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    const { finalUrl, timeout, testStarted, testFinished, data: cmpData } = data;
 
-  // Update global stats
-  if (!timeout) {
-    globalStats.validFiles++;
-    const duration = testFinished - testStarted;
-    globalStats.totalTime += duration;
-  } else {
-    globalStats.timeouts++;
-  }
+    // Update global stats
+    if (!timeout) {
+      globalStats.validFiles++;
+      const duration = testFinished - testStarted;
+      globalStats.totalTime += duration;
+    } else {
+      globalStats.timeouts++;
+    }
 
-  // Process CMP data
-  if (cmpData && cmpData.cmps) {
-    const cmpEntries = cmpData.cmps.length;
-    cmpsStats.totalEntries += cmpEntries;
+    // Process CMP data
+    if (cmpData && cmpData.cmps) {
+      const cmpEntries = cmpData.cmps.length;
+      cmpsStats.totalEntries += cmpEntries;
 
-    cmpData.cmps.forEach(cmp => {
-      // Track top CMP names
-      const cmpName = cmp.name || 'Unknown CMP';
-      cmpsStats.topCMPs[cmpName] = (cmpsStats.topCMPs[cmpName] || 0) + 1;
+      cmpData.cmps.forEach(cmp => {
+        // Track top CMP names
+        const cmpName = cmp.name || 'Unknown CMP';
+        cmpsStats.topCMPs[cmpName] = (cmpsStats.topCMPs[cmpName] || 0) + 1;
 
-      if (!cmp.name) {
-        cmpsStats.empty++;
-      }
+        if (!cmp.name) {
+          cmpsStats.empty++;
+        }
 
-      // Process USP objects
-      cmp.uspObjects.forEach(usp => {
-        if (usp.uspString) {
-          uspApiUrls.push(finalUrl);  // Track URL with usp API
+        // Process USP objects if not empty
+        if (cmp.uspObjects && cmp.uspObjects.length > 0) {
+          cmp.uspObjects.forEach(usp => {
+            if (usp.uspString) {
+              uspApiEntries.push({
+                url: finalUrl,           // URL containing usp API
+                uspString: usp.uspString, // USP string value
+                gppString: usp.gpp        // GPP string from USP object
+              });
+            }
+          });
+        }
+
+        // Process GPP objects if not empty
+        if (cmp.gppObjects && cmp.gppObjects.length > 0) {
+          cmp.gppObjects.forEach(gpp => {
+            if (gpp.supportedAPIs && gpp.supportedAPIs.length > 0) {
+              gppApiEntries.push({
+                url: finalUrl,             // URL containing gpp API
+                gppString: gpp.gppString,  // GPP string value
+                supportedAPIs: gpp.supportedAPIs // Supported APIs in GPP
+              });
+            }
+          });
         }
       });
-
-      // Process GPP objects
-      cmp.gppObjects.forEach(gpp => {
-        if (gpp.supportedAPIs && gpp.supportedAPIs.length > 0) {
-          gppApiUrls.push(finalUrl);  // Track URL with gpp API
-        }
-      });
-    });
-  } else {
+    } else {
+      globalStats.failingFiles++;
+    }
+  } catch (error) {
+    console.error(`Failed to process file: ${filePath}`, error);
     globalStats.failingFiles++;
   }
 }
@@ -158,8 +175,8 @@ fs.readdirSync(dataFolder).forEach(file => {
 });
 
 // Calculate averages
-globalStats.avgTime = globalStats.totalTime / globalStats.validFiles;
-cmpsStats.avgEntries = cmpsStats.totalEntries / globalStats.validFiles;
+globalStats.avgTime = globalStats.totalTime / globalStats.validFiles || 0;
+cmpsStats.avgEntries = cmpsStats.totalEntries / globalStats.validFiles || 0;
 
 // Sort top CMPs by occurrence
 let topCMPs = Object.entries(cmpsStats.topCMPs).sort((a, b) => b[1] - a[1]);
@@ -173,11 +190,11 @@ const result = {
     topCMPs: topCMPs.slice(0, 5), // Get top 5 CMPs
     empty: cmpsStats.empty
   },
-  uspApiUrls: uspApiUrls,
-  gppApiUrls: gppApiUrls
+  uspApiEntries: uspApiEntries,
+  gppApiEntries: gppApiEntries
 };
 
 // Write result to a new JSON file
-fs.writeFileSync('result.json', JSON.stringify(result, null, 2));
+fs.writeFileSync('/Users/raahemnabeel/Desktop/Sproj/tracker-radar-collector/summary/result.json', JSON.stringify(result, null, 2));
 
 console.log('Processing completed. Results saved in result.json.');
