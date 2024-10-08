@@ -20,8 +20,39 @@ const MOBILE_VIEWPORT = {
     hasTouch: true
 };
 
+/**
+ * Scrolls to the bottom of the page in increments.
+ *
+ * @param {import('puppeteer').Page} page - The Puppeteer page instance.
+ * @returns {Promise<void>} - A promise that resolves when the page has been scrolled to the bottom.
+ */
+
+
+async function scrollToBottom(page) {
+    await page.evaluate(async () => {
+        await new Promise((resolve) => {
+            let totalHeight = 0;
+            const distance = 200; // Scroll by 100 pixels at a time
+            const timer = setInterval(() => {
+                window.scrollBy(0, distance);
+                totalHeight += distance;
+
+                // Stop when totalHeight is greater than or equal to scrollHeight
+                if (totalHeight >= document.body.scrollHeight) {
+                    console.log("Done scrolling to the bottom of the page");
+                    clearInterval(timer);
+                    resolve();
+                }
+            }, 50); // Scroll every 100 milliseconds
+        });
+    });
+}
+
+
 // for debugging: will lunch in window mode instad of headless, open devtools and don't close windows after process finishes
-const VISUAL_DEBUG = false;
+const VISUAL_DEBUG = true;
+
+
 
 /**
  * @param {function(...any):void} log
@@ -199,6 +230,8 @@ async function getSiteData(context, url, {
 
     let timeout = false;
 
+    
+
     try {
         await page.goto(url.toString(), {timeout: maxLoadTimeMs, waitUntil: 'networkidle0'});
     } catch (e) {
@@ -217,6 +250,9 @@ async function getSiteData(context, url, {
         }
     }
 
+    // await scrollToBottom(page);
+
+
     for (let collector of collectors) {
         const postLoadTimer = createTimer();
         try {
@@ -230,6 +266,8 @@ async function getSiteData(context, url, {
 
     // give website a bit more time for things to settle
     await page.waitForTimeout(extraExecutionTimeMs);
+
+    // await scrollToBottom(page);
 
     const finalUrl = page.url();
     /**
@@ -302,7 +340,7 @@ module.exports = async (url, options) => {
 
     const maxLoadTimeMs = options.maxLoadTimeMs || 30000;
     const extraExecutionTimeMs = options.extraExecutionTimeMs || 2500;
-    const maxTotalTimeMs = maxLoadTimeMs * 2;
+    const maxTotalTimeMs = maxLoadTimeMs * 6;
 
     try {
         data = await wait(getSiteData(context, url, {

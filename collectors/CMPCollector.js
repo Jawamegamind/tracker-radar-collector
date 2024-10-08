@@ -4,6 +4,37 @@ const createDeferred = require('../helpers/deferred');
 const waitFor = require('../helpers/waitFor');
 const BaseCollector = require('./BaseCollector');
 
+
+
+/**
+ * Scrolls to the bottom of the page in increments.
+ *
+ * @param {import('puppeteer').Page} page - The Puppeteer page instance.
+ * @returns {Promise<void>} - A promise that resolves when the page has been scrolled to the bottom.
+ */
+
+
+async function scrollToBottom(page) {
+    await page.evaluate(async () => {
+        await new Promise((resolve) => {
+            let totalHeight = 0;
+            const distance = 200; // Scroll by 100 pixels at a time
+            const timer = setInterval(() => {
+                window.scrollBy(0, distance);
+                totalHeight += distance;
+
+                // Stop when totalHeight is greater than or equal to scrollHeight
+                if (totalHeight >= document.body.scrollHeight) {
+                    console.log("Done scrolling to the bottom of the page");
+                    clearInterval(timer);
+                    resolve();
+                }
+            }, 50); // Scroll every 100 milliseconds
+        });
+    });
+}
+
+
 /**
  * @typedef { import('./BaseCollector').CollectorInitOptions } CollectorInitOptions
  * @typedef { import('@duckduckgo/autoconsent/lib/types').AutoAction } AutoAction
@@ -326,8 +357,15 @@ class CMPCollector extends BaseCollector {
         const uspStrings = [];
         const gppObjects = [];
         const pages = await this.context.pages();
+
+
         if (pages.length > 0) {
             const page = pages[0];
+            
+            // Scroll to the bottom of the page to load all the content
+            // await scrollToBottom(page);
+            // await page.waitForTimeout(2000);
+
             /**
              * @type {Promise<string>[]}
              */
