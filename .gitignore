@@ -3,4 +3,5 @@ node_modules
 .vscode/
 data/
 data2/
+testing/
 summary.json

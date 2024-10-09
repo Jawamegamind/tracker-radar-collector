@@ -22,14 +22,14 @@ async function scrollToBottom(page) {
             const timer = setInterval(() => {
                 window.scrollBy(0, distance);
                 totalHeight += distance;
-
+                console.log("trying to scroll to the bottom of the page");
                 // Stop when totalHeight is greater than or equal to scrollHeight
                 if (totalHeight >= document.body.scrollHeight) {
                     console.log("Done scrolling to the bottom of the page");
                     clearInterval(timer);
                     resolve();
                 }
-            }, 50); // Scroll every 100 milliseconds
+            }, 10); // Scroll every 100 milliseconds
         });
     });
 }
@@ -363,8 +363,9 @@ class CMPCollector extends BaseCollector {
             const page = pages[0];
             
             // Scroll to the bottom of the page to load all the content
-            // await scrollToBottom(page);
             // await page.waitForTimeout(2000);
+            await scrollToBottom(page);
+          
 
             /**
              * @type {Promise<string>[]}
