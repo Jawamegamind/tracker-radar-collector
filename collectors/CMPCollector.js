@@ -46,7 +46,7 @@ async function scrollToBottom(page) {
  * @typedef { import('@duckduckgo/autoconsent/lib/messages').OptOutResultMessage } OptOutResultMessage
  * @typedef { import('@duckduckgo/autoconsent/lib/messages').OptInResultMessage } OptInResultMessage
  * @typedef { import('@duckduckgo/autoconsent/lib/messages').DoneMessage } DoneMessage
- * @typedef { { snippets: string[], patterns: string[], uspObjects: string[], gppObjects: string[] } } ScanResult
+ * @typedef { { snippets: string[], patterns: string[], uspObjects: string[], gppObjects: string[], hasSections: string[] } } ScanResult
  */
 
 // @ts-ignore
@@ -126,7 +126,8 @@ class CMPCollector extends BaseCollector {
             snippets: [],
             patterns: [],
             uspObjects: [],
-            gppObjects: []
+            gppObjects: [],
+            hasSections: []
         };
     }
 
@@ -356,6 +357,8 @@ class CMPCollector extends BaseCollector {
         const foundSnippets = [];
         const uspStrings = [];
         const gppObjects = [];
+        const hasSections = [];
+    
         const pages = await this.context.pages();
 
 
@@ -447,13 +450,61 @@ class CMPCollector extends BaseCollector {
             } catch (error) {
                 console.log('Error retrieving GPP object:', error);
             }
+
+            // Now we need to run the hasSections api to see if CMP has generated section of a certrain specification
+            // For this we need to basically call hasSection function below
+            console.log('The supported APIs are:', gppObjects.length > 0 ? gppObjects[0].supportedAPIs : 'No GPP objects found');
+            console.log('Attempting to check for sections...');
+
+            try {
+                // Extract supported APIs from the gppObject
+                const supportedAPIs = gppObjects.length > 0 ? gppObjects[0].supportedAPIs : [];
+                // const hasSections = [];
+
+                // Loop through each supported API and call hasSection
+                for (const api of supportedAPIs) {
+                    // Extract the part after the colon (e.g., 'tcfcav1' from '5:tcfcav1')
+                    const apiIdentifier = api.split(':')[1];
+
+                    // Check if we have a valid apiIdentifier
+                    if (apiIdentifier) {
+                        const hasSection = await page.evaluate((apiId) => {
+                            return new Promise(resolve => {
+                                // Check if __gpp function exists on the window object
+                                // @ts-ignore
+                                if (typeof window.__gpp !== 'function') {
+                                    resolve(null); // Resolve with null if __gpp doesn't exist
+                                    return;
+                                }
+                                // Call the __gpp function with the apiId
+                                // @ts-ignore
+                                window.__gpp('hasSection', (/** @type {Boolean} */ data, /** @type {Boolean} */ success) => {
+                                    if (success) {
+                                        resolve(data);
+                                    } else {
+                                        resolve(null);
+                                    }
+                                }, apiId); // Pass the dynamic apiId (e.g., 'tcfcav1')
+                            });
+                        }, apiIdentifier);
+
+                        // Add the result (true/false/null) to the hasSections array
+                        hasSections.push({ api: apiIdentifier, hasSection });
+                    }
+                }
+                console.log('Sections found:', hasSections);
+            } catch (error) {
+                console.log('Error checking for sections:', error);
+            }
+
         }
         this.pendingScan.resolve();
         this.scanResult = {
             patterns: foundPatterns,
             snippets: Array.from(new Set(foundSnippets)),
             uspObjects: uspStrings,
-            gppObjects: gppObjects
+            gppObjects: gppObjects,
+            hasSections: hasSections
         };
         console.log('Scan result:', this.scanResult);
     }
@@ -502,7 +553,8 @@ class CMPCollector extends BaseCollector {
                 patterns: [],
                 snippets: [],
                 uspObjects: [],
-                gppObjects: []
+                gppObjects: [],
+                hasSections: []
             };
 
             const found = this.findMessage({type: 'popupFound', cmp: msg.cmp});
@@ -534,13 +586,14 @@ class CMPCollector extends BaseCollector {
     async getData() {
         await this.waitForFinish();
         const results = this.collectResults();
-        if (this.scanResult.patterns.length > 0 || this.scanResult.snippets.length > 0 || this.scanResult.uspObjects.length > 0 || this.scanResult.gppObjects.length > 0) {
+        if (this.scanResult.patterns.length > 0 || this.scanResult.snippets.length > 0 || this.scanResult.uspObjects.length > 0 || this.scanResult.gppObjects.length > 0 || this.scanResult.hasSections.length > 0) {
             if (results.length > 0) {
                 results.forEach(r => {
                     r.patterns = this.scanResult.patterns;
                     r.snippets = this.scanResult.snippets;
                     r.uspObjects = this.scanResult.uspObjects;
                     r.gppObjects = this.scanResult.gppObjects;
+                    r.hasSections = this.scanResult.hasSections;
                 });
             } else {
                 results.push({
@@ -554,7 +607,8 @@ class CMPCollector extends BaseCollector {
                     patterns: this.scanResult.patterns,
                     snippets: this.scanResult.snippets,
                     uspObjects: this.scanResult.uspObjects,
-                    gppObjects: this.scanResult.gppObjects
+                    gppObjects: this.scanResult.gppObjects,
+                    hasSections: this.scanResult.hasSections
                 });
             }
         }
@@ -576,6 +630,7 @@ class CMPCollector extends BaseCollector {
  * @property {string[]} snippets
  * @property {string[]} uspObjects
  * @property {string[]} gppObjects
+ * @property {string[]} hasSections
  */
 
 module.exports = CMPCollector;
